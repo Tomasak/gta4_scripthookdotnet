@@ -73,6 +73,7 @@ namespace GTA {
 		SupportedGameVersions->Add(GameVersion::v1070, cppHookVersion::v0_5_1);
 		SupportedGameVersions->Add(GameVersion::v1110, cppHookVersion::v0_5_1);
 		SupportedGameVersions->Add(GameVersion::v1120, cppHookVersion::v0_5_1);
+		SupportedGameVersions->Add(GameVersion::v1259, cppHookVersion::v0_5_1);
 
 		CallMutex->WaitOne();
 		try {
