@@ -1378,6 +1378,7 @@ namespace GTA{
 		v1070 = 0x01000700,
 		v1110 = 0x01010100, // EFLC
 		v1120 = 0x01010200, // EFLC
+		v1259 = 0x0102003B,
 	};
 
 	private enum class cppHookVersion : unsigned int {

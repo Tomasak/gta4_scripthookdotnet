@@ -1,0 +1,23 @@
+version: 1.7.1.{build}
+image: Visual Studio 2015
+configuration: Release
+build:
+  project: scripthookdotnet.sln
+  verbosity: minimal
+after_build:
+- cmd: >-
+    copy ".\bin\ScriptHookDotNet.asi" ".\dist\" /Y
+
+    7z a "scripthookdotnet_v1.7.1.8.zip" ".\dist\*"
+artifacts:
+- path: scripthookdotnet_v1.7.1.8.zip
+deploy:
+- provider: GitHub
+  tag: release
+  release: GTA4 .Net ScriptHook v1.7.1.8
+  auth_token:
+    secure: hZfzShCRCU17LcTA8gomF+/HRGZkoOsadPrlQUhyaBin5QfGa7+pk6+xx+SBnfF8
+  artifact: scripthookdotnet_v1.7.1.8.zip
+  force_update: true
+  on:
+    branch: master

@@ -364,3 +364,6 @@ ASALocalRun/
 *.exe
 *.out
 *.app
+!ScriptHookDotNet/dxsdk/**.*
+!ScriptHook.lib
+!dist/ScriptHook.dll

@@ -32,7 +32,7 @@ namespace GTA{
 	private ref class NetHook sealed {
 
 	public:
-		static String^ Version = "1.7.1.7";
+		static String^ Version = "1.7.1.8";
 		static String^ ProgramName = "ScriptHookDotNet";
 #ifdef DEBUG
 		static String^ VersionName = String::Concat( ProgramName, " v", Version, " DEBUGGING BETA" ); //Version.ToString("F3",Globalization::CultureInfo::InvariantCulture)
@@ -40,7 +40,7 @@ namespace GTA{
 		static String^ VersionName = String::Concat( ProgramName, " v", Version, " BETA" );
 #endif
 		//static GameVersion MinGameVersion = GameVersion::v1010;
-		static GameVersion MaxGameVersion = GameVersion::v1070;
+		static GameVersion MaxGameVersion = GameVersion::v1259;
 		static Dictionary<GameVersion,cppHookVersion>^ SupportedGameVersions;
 
 		static NetHook();

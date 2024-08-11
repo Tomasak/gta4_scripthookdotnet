@@ -141,9 +141,9 @@ namespace GTA {
 		if (Scripting::IsPauseMenuActive() || Scripting::IsScreenFadingOut() || Scripting::IsScreenFadedOut()) return;
 		bDrawing = true;
 		try {
-			cDevice->SetTexture(0, NULL);
-			cDevice->SetRenderState(D3DRS_ZENABLE, FALSE);
-			cDevice->SetRenderState(D3DRS_ALPHABLENDENABLE, TRUE); 
+			//cDevice->SetTexture(0, NULL);
+			//cDevice->SetRenderState(D3DRS_ZENABLE, FALSE);
+			//cDevice->SetRenderState(D3DRS_ALPHABLENDENABLE, TRUE); 
 			
 			NetHook::Draw();
 
